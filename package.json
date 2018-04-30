@@ -45,7 +45,7 @@
     "prepare": "tsc",
     "prepublishOnly": "tsc",
     "test": "ts-node node_modules/tape/bin/tape test/*.ts | tap-spec",
-    "postinstall": "npm run build"
+    "preinstall": "yarn install && tsc"
   },
   "prettier": {
     "printWidth": 100,
